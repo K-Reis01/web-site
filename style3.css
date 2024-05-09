@@ -1,0 +1,246 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FA50CB;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .2s;
+    user-select: none;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #FA50CB;
+    transform: scale(1.05);
+}
+
+/* Estilo do Cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    text-decoration: none;
+}
+
+header nav.menu-desktop a:hover {
+    color: #FA50CB;
+    transform: scale(1.05);
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .interface img {
+    width: 100%;
+    user-select: none;
+}
+
+header nav ul {
+    list-style-type: none;
+
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+.btn-social button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FA50CB;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILO DO MENU MOBILE */
+
+
+@media screen and (max-width: 1245px) {
+
+    /* Classes Gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+
+    /* Cabeçalho */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-social button {
+        font-size: 23px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    footer .interface .line-footer .logo-footer img {
+        left: 25%;
+        position: relative;
+        width: 50%;
+    }
+
+    footer .interface .flex {
+        gap: 20px;
+    }
+
+    /* Estilo do sobre */
+    .sobre .txt-sobre h1 {
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre h1 span {
+        font-size: 30px;
+    }
+
+    .sobre .txt-sobre p {
+        font-size: 16px;
+    }
+
+    .sobre .img-sobre img {
+        width: 80%;
+        align-items: center;
+        left: 40px;
+    }
+
+    .section.sobre {
+        padding: 20px 8%;
+    }
+
+    .section.sobre .flex {
+        gap: 20px;
+    }
+}
+
+/* Estilo do Rodapé */
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #FA50CB;
+}
+
+footer .line-footer p i {
+    color: #FA50CB;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: white;
+}
+
+.line-footer .logo-footer img {
+    width: 30%;
+    user-select: none;
+}
+
+@media screen and (min-width: 1245px) {
+
+    /* Estilo Menu Mobile */
+    .btn-abrir-menu {
+        display: none;
+    }
+}
+
+/* Estilo do sobre */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.sobre .txt-sobre h1 {
+    color: white;
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h1 span {
+    color: #FA50CB;
+    font-size: 40px;
+}
+
+.sobre .txt-sobre p {
+    color: white;
+    margin: 30px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.sobre .img-sobre img {
+    border-radius: 30px 3px 30px 3px;
+    position: relative;
+    user-select: none;
+}
+
+.btn-social button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FA50CB;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
